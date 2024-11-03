@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: "Roboto", sans-serif;
+font-family: "Cormorant Garamond", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+::-webkit-selection {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff9ec !important;
+}
+
+.nav-link {
+    color: #d2d0bb !important;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff9ec;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #fff9ec;
+    transition: color 0.3s ease;
+}
+
+.navbar .d-flex .text-white p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("./menu-alt-01-svgrepo-com.svg");
+
+}
+
+.offcanvas-end {
+    background-color: black;
+}
+
+.offcanvas-title {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.offcanvas-body .nav-link {
+    color: #d2d0bb !important;
+}
+
+.hero {
+    width: 100%;
+    height: 600px;
+    background-image: url(./pexels-jvdm-1457842.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Room Booking CSS */
+.room-booking {
+    padding: 30px 0;
+}
+
+.sidebar-menu {
+    top: 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sidebar-menu ul li a {
+    color: #7b9e87;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sidebar-menu ul li a:hover {
+    color: #5a7e67;
+}
+
+.room-booking {
+    display: flex;
+}
+
+.room-info {
+    padding-left: 20px;
+}
+
+.room-details {
+    display: none;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    transition: max-height 0.4s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .room-booking {
+        flex-direction: column;
+    }
+    .sidebar-menu {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+}
+
+
+.room-info h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.room-info p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.room-entry {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.room-entry .image img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.room-entry .text {
+    margin-left: 20px;
+}
+
+.room-entry .text h3 {
+    font-size: 22px;
+    color: #7b9e87;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.room-entry .text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.room-entry .text i {
+    color: #7b9e87;
+    margin-right: 3px;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .room-booking {
+        padding: 20px 15px;
+    }
+    
+    .sidebar-menu h2 {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .room-info h1 {
+        font-size: 40px;
+    }
+    
+    .room-entry {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .room-entry .text {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar-menu h2 {
+        text-align: center;
+    }
+
+    .room-info h1 {
+        font-size: 32px;
+    }
+    
+    .room-entry .image img {
+        max-width: 120px;
+    }
+
+    .room-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Room Details - Hidden by Default */
+.room-details {
+    display: none;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.show-more-link {
+    margin-top: 10px;
+    display: inline-block;
+    color: #7b9e87;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.show-more-link:hover {
+    color: #5a7e67;
+}
+
+/* Animation for expanding/collapsing */
+.room-details.open {
+    display: block;
+    animation: slideDown 0.4s ease forwards;
+}
+
+/* Slide-down effect */
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 300px; /* Adjust based on content */
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .room-entry {
+        flex-direction: column;
+    }
+}
+
+
+.footer {
+    background-color: #111;
+    color: #e0dfd6;
+    padding: 50px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #d2d0bb;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #d2d0bb;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #ffffff;
+}
+
+.footer-links {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-links h4 {
+    font-size: 1.8arem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #d2d0bb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-contact {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-contact h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-contact ul li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer-contact ul li i {
+    margin-right: 8px;
+    color: #e0dfd6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #d2d0bb;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo, .footer-links, .footer-contact {
+        text-align: center;
+    }
+}
+

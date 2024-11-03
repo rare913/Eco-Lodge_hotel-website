@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eco Lodge &#8211; Book Your Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="rooms.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand text-white" href="./index.html">BOOK YOUR TRAVEL</a>
+
+            <!-- Offcanvas Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">BOOK YOUR TRAVEL</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./rooms.html">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tours.html">Guided Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./location.html">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center mt-2">
+                        <i class="fa-solid fa-phone me-2 text-white"></i>
+                        <div class="text-white">
+                            <p class="mb-0">Info & reservations</p>
+                            <p class="mb-0">1 - 111 - 344 - 678</p>
+                        </div>
+                        <a href="#" class="ms-4 text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+        </div>
+    </section>
+
+   <!-- Room Booking Section -->
+<section class="room-booking container">
+    <div class="row">
+        <!-- Sidebar Menu -->
+        <div class="col-12 col-md-3 sidebar-menu">
+            <ul>
+                <li><a href="#availability">Availability</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#house-rules">House rules</a></li>
+            </ul>
+        </div>
+
+        <!-- Room Information -->
+        <div class="col-12 col-md-9 room-info">
+            <h1>Availability</h1>
+            <p>Vanquish the impossible, another world made in the interiors of collapsing stars. The sky calls to us, gathered by gravity, the carbon in our apple pies, and billions upon billions.</p>
+            
+            <!-- Room Entry 1 -->
+            <div class="room-entry d-flex">
+                <div class="image">
+                    <img src="./eco9-300x300.jpg" alt="Premium Villa Image">
+                </div>
+                <div class="text">
+                    <h3>Premium Villa</h3>
+                    <p>
+                        Breathtaking view<br>
+                        Private garden<br>
+                        Free WiFi<br>
+                        <i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i>
+                    </p>
+                    <a href="javascript:void(0);" onclick="toggleDetails(this)" class="show-more-link">Show More</a>
+                    <!-- Hidden Room Details -->
+                    <div class="room-details">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium sit odit alias nesciunt necessitatibus unde eligendi consequatur! Libero, iure.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Room Entry 2 -->
+            <div class="room-entry d-flex">
+                <div class="image">
+                    <img src="./eco9-300x300.jpg" alt="Deluxe Suite Image">
+                </div>
+                <div class="text">
+                    <h3>Deluxe Suite</h3>
+                    <p>
+                        Sea-facing balcony<br>
+                        King-size bed<br>
+                        High-speed WiFi<br>
+                        <i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i><i class="fas fa-user"></i>
+                    </p>
+                    <a href="javascript:void(0);" onclick="toggleDetails(this)" class="show-more-link">Show More</a>
+                    <!-- Hidden Room Details -->
+                    <div class="room-details">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium sit odit alias nesciunt necessitatibus unde eligendi consequatur! Libero, iure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Eco Lodge</h2>
+                <p>Experience nature with the comfort you deserve.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms & Suites</a></li>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Information</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@yourbrand.com</li>
+                    <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Nature Blvd, Eco City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 <a style="color: #ffffff;" href="https://vastcope.com/">VASTCOPE</a>. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: "Roboto", sans-serif;
+font-family: "Cormorant Garamond", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+::-webkit-selection {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff9ec !important;
+}
+
+.nav-link {
+    color: #d2d0bb !important;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff9ec;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #fff9ec;
+    transition: color 0.3s ease;
+}
+
+.navbar .d-flex .text-white p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("./menu-alt-01-svgrepo-com.svg");
+
+}
+
+.offcanvas-end {
+    background-color: black;
+}
+
+.offcanvas-title {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.offcanvas-body .nav-link {
+    color: #d2d0bb !important;
+}
+
+.hero {
+    width: 100%;
+    height: 900px;
+    background-image: url(./pexels-cottonbro-6466302.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 100px;
+    line-height: 90px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.hero h5 {
+    font-size: 12px;
+    padding-top: 15%;
+}
+
+.hero button {
+    font-family: "Cormorant Garamond", serif;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: #7b9e87;
+    margin-top: 5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #748391;
+    color: #fff;
+}
+
+.welcome-lavera img {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-lavera {
+    margin: 4% auto;
+}
+
+.welcome-lavera .right {
+    font-family: "Cormorant Garamond", serif;
+    padding: 50px;
+}
+
+.welcome-lavera h5 {
+    font-size: 13px;
+}
+
+.welcome-lavera h2 {
+    font-size: 60px;
+}
+
+.welcome-lavera p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .welcome-lavera h2 {
+        font-size: 50px;
+    }
+
+    .welcome-lavera p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .welcome-lavera h2 {
+        font-size: 40px;
+    }
+
+    .welcome-lavera p {
+        font-size: 16px;
+    }
+
+    .welcome-lavera .right {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-lavera {
+        margin: 15% 0;
+    }
+
+    .welcome-lavera h5 {
+        font-size: 12px;
+    }
+
+    .welcome-lavera h2 {
+        font-size: 30px;
+    }
+
+    .welcome-lavera p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-lavera {
+        margin: 3% 0;
+    }
+
+    .welcome-lavera h5 {
+        font-size: 11px;
+    }
+
+    .welcome-lavera h2 {
+        font-size: 24px;
+    }
+
+    .welcome-lavera p {
+        font-size: 12px;
+    }
+}
+
+.details-room {
+    margin: 3% auto;
+}
+
+.details-room img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.quote-icon {
+    font-size: 40px;
+    color: #7b9e87;
+}
+
+.details-room h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    margin: 20px 0;
+    color: #7b9e87;
+    font-weight: bold;
+}
+
+.room-details {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px; 
+    font-family: "Cormorant Garamond", serif; 
+}
+
+.detail {
+    text-align: center; 
+}
+
+.detail h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.detail p {
+    font-size: 16px; 
+    margin: 0; 
+}
+
+.details-room button {
+    font-family: "Cormorant Garamond", serif; 
+    width: 250px; 
+    height: 60px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    border: none; 
+    color: white; 
+    background-color: #7b9e87;
+    margin-top: 5%; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block; 
+    margin-left: auto; 
+}
+
+.details-room button:hover {
+    background-color: #748391; 
+    color: #fff; 
+}
+
+@media (max-width: 1200px) {
+    .details-room h1 {
+        font-size: 32px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .details-room h1 {
+        font-size: 28px; 
+    }
+
+    .detail h2 {
+        font-size: 30px; 
+    }
+
+    .detail p {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .details-room {
+        margin: 5% 0; 
+    }
+
+    .details-room h1 {
+        font-size: 24px; 
+    }
+
+    .room-details {
+        align-items: center;    }
+
+    .detail {
+        margin-bottom: 20px; 
+    }
+
+}
+
+@media (max-width: 576px) {
+    .details-room h1 {
+        font-size: 20px; 
+    }
+
+    .detail h2 {
+        font-size: 24px; 
+    }
+
+    .detail p {
+        font-size: 12px;
+    }
+}
+
+.features {
+    margin: 2% auto;
+}
+
+.features img {
+    width: 100%; 
+    height: auto; 
+}
+
+.features .col {
+    padding: 20px; 
+}
+
+.features h2 {
+    font-family: "Cormorant Garamond", serif; 
+    font-size: 30px; 
+    font-weight: bolder;
+    padding-top: 20px; 
+    padding-bottom: 10px; 
+}
+
+.features p {
+    line-height: 30px;
+    margin: 0 auto; 
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .features h2 {
+        font-size: 28px; 
+    }
+    .features p {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .features h2 {
+        font-size: 26px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        margin: 5% 0;
+    }
+
+    .features h2 {
+        font-size: 24px; 
+    }
+
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .features h2 {
+        font-size: 22px; 
+    }
+
+    .features p {
+        font-size: 12px; 
+    }
+}
+
+.skin-care {
+    background-image: url(./horizontal-banner-cosmetic-product-with-jade-roller-gua-sha.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin: 3% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    width: 75%;
+    margin: auto;
+}
+
+.product h5 {
+    font-size: 14px;
+}
+
+.product h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 70px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product button {
+    font-family: "Cormorant Garamond", serif;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: #7b9e87;
+    margin-top: 3%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #748391;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .skin-care {
+        height: 400px;
+    }
+    .product h1 {
+        font-size: 50px;
+    }
+    .product p {
+        font-size: 16px;
+    }
+    .product button {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skin-care {
+        height: 350px;
+        padding: 20px;
+    }
+    .product h1 {
+        font-size: 40px;
+    }
+    .product p {
+        font-size: 15px;
+    }
+    .product h5 {
+        padding-top: 50px;
+        font-size: 12px;
+    }
+    .product button {
+        width: 180px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skin-care {
+        height: 300px;
+        padding: 10px;
+    }
+    .product h1 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .product p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .product h5 {
+        padding-top: 30px;
+        font-size: 10px;
+    }
+    .product button {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+.mission {
+    padding: 3% 0;
+}
+
+.mission h5 {
+    font-size: 14px;
+    color: #7b9e87;
+    margin-bottom: 10px;
+}
+
+.mission h1 {
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.mission h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.mission p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 20px;
+}
+
+@media (max-width: 1024px) {
+    .mission h1 {
+        font-size: 50px;
+    }
+    .mission h2 {
+        font-size: 25px;
+    }
+    .mission p {
+        font-size: 15px;
+    }
+    .mission h5 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mission {
+        text-align: center;
+    }
+    .mission h1 {
+        font-size: 40px;
+    }
+    .mission h2 {
+        font-size: 22px;
+    }
+    .mission p {
+        font-size: 14px;
+    }
+    .mission h5 {
+        font-size: 12px;
+    }
+    .mission .row {
+        flex-direction: column;
+    }
+    .mission .col-md-6 {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission h1 {
+        font-size: 30px;
+    }
+    .mission h2 {
+        font-size: 20px;
+    }
+    .mission p {
+        font-size: 13px;
+    }
+    .mission h5 {
+        font-size: 10px;
+    }
+    .mission {
+        padding: 5% 0;
+    }
+}
+
+.footer {
+    background-color: #111;
+    color: #e0dfd6;
+    padding: 50px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #d2d0bb;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #d2d0bb;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #ffffff;
+}
+
+.footer-links {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-links h4 {
+    font-size: 1.8arem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #d2d0bb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-contact {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-contact h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-contact ul li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer-contact ul li i {
+    margin-right: 8px;
+    color: #e0dfd6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #d2d0bb;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo, .footer-links, .footer-contact {
+        text-align: center;
+    }
+}
